@@ -2,7 +2,7 @@
 
 This repository contains exercise solutions to the 2020 edition of the Full Stack Open course from the University of Helsinki.
 
-[Certificate](https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/6e24d45ceb196a1ec2baab877b33bb68)
+[VIEW CERTIFICATE](https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/6e24d45ceb196a1ec2baab877b33bb68)
 
 
 ## Overview

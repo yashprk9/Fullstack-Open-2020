@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 
-const Button = ({ onClick, text }) => ( 
-  <button onClick={onClick}>
-    {text}
-  </button>
-)
+const Button = ({text, handleclick}) => <button onClick={handleClick}>{text}</button>;
 
-const Statistic = ({ name, value }) => (
+
+
+const Statistic = ({ text, value }) => {
+  return(
   <tr>
-    <td>{name}</td>
+    <td>{text}</td>
     <td>{value}</td>
   </tr>
 )
+  }
 
 const Statistics = ({ good, neutral, bad }) => {
   let all = good + neutral + bad

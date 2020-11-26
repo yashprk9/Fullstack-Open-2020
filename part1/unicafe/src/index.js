@@ -64,7 +64,7 @@ const App = () => {
       <Statistics good={good} neutral={neutral} bad={bad} />
     </div>
   )
-}
+
 
 ReactDOM.render(<App />, 
   document.getElementById('root')

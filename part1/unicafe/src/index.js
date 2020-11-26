@@ -7,7 +7,7 @@ const Button = ({ onClick, text }) => (
   </button>
 )
 
-const Statistic = ({ name, value }) => (
+const Stat = ({ name, value }) => (
   <tr>
     <td>{name}</td>
     <td>{value}</td>
@@ -66,7 +66,7 @@ const App = () => {
   )
 
   }
-  
+
 ReactDOM.render(<App />, 
   document.getElementById('root')
 )

@@ -25,6 +25,14 @@ const Part = (props) => {
   )
 }
 
+const Content = ({ course }) => {
+  return (
+      <div>
+      {course.parts.map((part) => <Part part={part}/>)}
+      </div>
+  )
+}
+
 export default function Course({course}) {
     return(
         <div>

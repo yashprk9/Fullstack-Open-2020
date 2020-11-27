@@ -6,20 +6,23 @@ const Header = ({ course }) => {
     )
 }
   
-  const Part = ({ part }) => {
-    return (
+const Total = ({ course }) => {
+
+  const sum = course.parts.reduce((acc,part)=>{
+      return acc + part.exercises
+  },0)
+
+  return(
+      <p><b>total of {sum} exercises</b></p>
+  ) 
+}
+
+const Part = (props) => {
+  return (
       <p>
-        {part.name} {part.exercises}
+      {props.part.name} {props.part.exercises}
       </p>    
-    )
-  }
-  
-  const Content = ({ course }) => {
-    return (
-        <div>
-        {course.parts.map((part) => <Part part={part}/>)}
-        </div>
-    )
+  )
 }
 
 export default function Course({course}) {

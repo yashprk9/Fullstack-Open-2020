@@ -18,17 +18,7 @@ const App = ({anecdotes}) => {
   
       const maxVoted = () => votes.indexOf(Math.max(...votes));
       
-  return (
-    <div>
-      <h1>Anecdote of the day</h1>
-      <Anecdote anecdote={props.anecdotes[selected]} votes={votes[selected]} />
-      <Button onClick={handleVote} text='vote' />
-      <Button onClick={handleNextAnecdote} text='next anecdote' />
-      <h1>Anecdote with most votes</h1>
-      <Anecdote anecdote={props.anecdotes[maxVotedQuote]} votes={votes[maxVotedQuote]} />
-    </div>
-  )
-}
+  
 
 const anecdotes = [
   'If it hurts, do it more often',

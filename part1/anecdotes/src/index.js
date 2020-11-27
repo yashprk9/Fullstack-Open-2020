@@ -10,9 +10,14 @@ const App = ({anecdotes}) => {
       const newVotes = [...votes]
       newVotes[selected] = newVotes[selected] + 1 
       setVotes(newVotes)
-    };
+    }
 
+    const handleNextAnecdote = () => {
+      setSelected(Math.floor(Math.random() * props.anecdotes.length))
+    }
   
+      const maxVoted = () => votes.indexOf(Math.max(...votes));
+      
   return (
     <div>
       <h1>Anecdote of the day</h1>

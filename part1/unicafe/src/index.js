@@ -1,11 +1,7 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 
-const Button = ({text,handleClick}) => {
-  return (
-    <button onClick={handleClick}>{text}</button>
-  )
-}
+const Button = ({text, handleClick}) => <button onClick={handleClick}>{text}</button>;
 
 const Statistics = ({good, neutral, bad}) => {
   const total = good + neutral + bad

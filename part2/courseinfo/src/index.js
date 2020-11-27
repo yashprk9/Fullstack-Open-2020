@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Course from './components/Course'
+import App from './App'
 
-const App = () => {
 const courses = [
   {
     name: 'Half Stack application development',
@@ -48,8 +47,5 @@ const courses = [
   }
 ]
 
-return (
-  courses.map((course) => <Course course={course}/>)
-)
-}
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App courses={courses}/>,
+                 document.getElementById('root'))
